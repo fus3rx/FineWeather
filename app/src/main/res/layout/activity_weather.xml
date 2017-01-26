@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grass"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#c7f9faf6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherIconImageView"
+            android:src="@drawable/icon_na"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/condition_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/temperature"
+            android:id="@+id/temperatureTextView"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/condition"
+            android:id="@+id/conditionTextView"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/location"
+            android:id="@+id/locationTextView"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="50dp">-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#303F9F"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:text="Details"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:textStyle="bold"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#303F9F"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:src="@drawable/icon_na"-->
+                    <!--android:layout_weight=".7"/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#303F9F"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="1.3"-->
+                    <!--android:weightSum="4">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                        <!--android:text="Feels Like"-->
+                        <!--android:id="@+id/feelsLikeTV"-->
+                        <!--android:layout_weight="1"/>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#303F9F"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                        <!--android:text="Humidity"-->
+                        <!--android:id="@+id/HumidityTV"-->
+                        <!--android:layout_weight="1"/>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#303F9F"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                        <!--android:text="Wind"-->
+                        <!--android:id="@+id/windTV"-->
+                        <!--android:layout_weight="1"/>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#303F9F"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                        <!--android:text="Barometer"-->
+                        <!--android:id="@+id/barometerTV"-->
+                        <!--android:layout_weight="1"/>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#303F9F"/>-->
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:id="@+id/forecastContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--<fragment-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:name="net.digitalphantom.app.weatherapp.fragments.WeatherConditionFragment"-->
+                    <!--android:id="@+id/forecast_0"-->
+                    <!--android:layout_weight="1"-->
+                    <!--tools:layout="@layout/fragment_weather_condition" />-->
+                <fragment
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:name="com.imaginers.tonmo.fineweather.fragments.WeatherConditionFragment"
+                    android:id="@+id/forecast_1"
+                    android:layout_weight="1" tools:layout="@layout/fragment_weather_condition" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <fragment
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:name="com.imaginers.tonmo.fineweather.fragments.WeatherConditionFragment"
+                    android:id="@+id/forecast_2"
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_weather_condition" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+            <fragment
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:name="com.imaginers.tonmo.fineweather.fragments.WeatherConditionFragment"
+                android:id="@+id/forecast_3"
+                android:layout_weight="1"
+                tools:layout="@layout/fragment_weather_condition" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"/>
+                <fragment
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:name="com.imaginers.tonmo.fineweather.fragments.WeatherConditionFragment"
+                    android:id="@+id/forecast_4"
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_weather_condition" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yahoo_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView"
+            android:contentDescription="@string/powered_by_yahoo" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
